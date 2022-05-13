@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6749687136462386201}
   - component: {fileID: 4849033962673052607}
+  - component: {fileID: 3533855321395539208}
+  - component: {fileID: 688835499320997493}
   m_Layer: 0
   m_Name: LaserObject
   m_TagString: Untagged
@@ -45,6 +47,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velociadad: 20
+  particles: {fileID: 6740429533742126124, guid: dea8b7ade305bea4f94bb0a5a32748dd, type: 3}
+--- !u!65 &3533855321395539208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499758586814858533}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 1.43, z: 0.24969101}
+  m_Center: {x: 0, y: 0, z: -0.020055294}
+--- !u!54 &688835499320997493
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499758586814858533}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8198357042193768547
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,8 +88,6 @@ GameObject:
   - component: {fileID: 8830919948117768921}
   - component: {fileID: 5558112035964155260}
   - component: {fileID: 7694002194620055990}
-  - component: {fileID: 285831299528219832}
-  - component: {fileID: 4037946445065819701}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -130,32 +160,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &285831299528219832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8198357042193768547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90c523d532923b643bb3fb889b662c56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velociadad: 10
---- !u!65 &4037946445065819701
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8198357042193768547}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.024955815, y: 0.00156313, z: 0.0039384007}
-  m_Center: {x: 0.000010624528, y: 0.00026823784, z: -0.000016156757}
 --- !u!1 &8456921512781406782
 GameObject:
   m_ObjectHideFlags: 0
