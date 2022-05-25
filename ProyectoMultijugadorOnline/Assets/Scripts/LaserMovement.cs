@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class LaserMovement : MonoBehaviour
+public class LaserMovement : NetworkBehaviour
 {
     public float velociadad;
     public GameObject particles;
@@ -12,7 +13,7 @@ public class LaserMovement : MonoBehaviour
         Destroy(this.gameObject, 4f);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         transform.Translate(Vector3.up * velociadad * Time.deltaTime);

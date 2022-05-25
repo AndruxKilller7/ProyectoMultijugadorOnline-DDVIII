@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class Player1Movement : MonoBehaviour
+public class Player1Movement : NetworkBehaviour
 {
     public float velocidad;
     public float velocidadDeRotacion;
-    void Start()
-    {
-        
-    }
+   
 
     
     void Update()

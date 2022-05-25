@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Player1Controller : MonoBehaviour
 {
     public Image barlife;
@@ -10,7 +11,7 @@ public class Player1Controller : MonoBehaviour
     public GameObject panelGameOver;
     void Start()
     {
-        
+        barlife = GameObject.Find("LifeBarP1").GetComponent<Image>();
     }
 
    

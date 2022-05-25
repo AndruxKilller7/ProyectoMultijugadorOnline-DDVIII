@@ -1,21 +1,25 @@
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Mirror;
+
 public class NetworkManagerGame : NetworkManager
 {
     public Transform pivotPlayer1;
     public Transform pivotPlayer2;
-
     
-    void Start()
+
+    public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
-        
+       
+
+        Transform start = numPlayers == 0 ? pivotPlayer1 : pivotPlayer2;
+        GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
+        NetworkServer.AddPlayerForConnection(conn, player);
+
+        base.OnServerAddPlayer(conn);
     }
 
 
-    void Update()
-    {
-        
-    }
+   
 }

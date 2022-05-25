@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Player2Movement : MonoBehaviour
 {
     public float velocidad;
     public float velocidadDeRotacion;
-    void Start()
-    {
 
-    }
 
 
     void Update()
