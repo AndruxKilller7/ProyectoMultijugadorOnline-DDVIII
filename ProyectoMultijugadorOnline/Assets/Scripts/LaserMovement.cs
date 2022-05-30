@@ -20,6 +20,7 @@ public class LaserMovement : NetworkBehaviour
     }
 
    
+    [ServerCallback]
    private void OnCollisionEnter(Collision other) 
    {
        if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Player2"))

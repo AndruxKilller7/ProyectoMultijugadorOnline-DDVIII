@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class ShotingLaser : MonoBehaviour
+public class ShotingLaser : NetworkBehaviour
 {
     public GameObject laser;
     public Transform pivotLaser;
@@ -12,12 +13,18 @@ public class ShotingLaser : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(laser, pivotLaser.position, transform.rotation);
+            Shoot();
         }
+    }
+
+    [Command]
+    public void Shoot()
+    {
+        Instantiate(laser, pivotLaser.position, transform.rotation);
     }
 }

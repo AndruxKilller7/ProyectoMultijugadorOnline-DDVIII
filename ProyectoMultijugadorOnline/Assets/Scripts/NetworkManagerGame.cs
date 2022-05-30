@@ -11,13 +11,14 @@ public class NetworkManagerGame : NetworkManager
 
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
-       
 
+        
         Transform start = numPlayers == 0 ? pivotPlayer1 : pivotPlayer2;
         GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
         NetworkServer.AddPlayerForConnection(conn, player);
+        print("sdasd");
+        //base.OnServerAddPlayer(conn);
 
-        base.OnServerAddPlayer(conn);
     }
 
 
