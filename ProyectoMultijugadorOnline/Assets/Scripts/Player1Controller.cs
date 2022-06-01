@@ -12,14 +12,14 @@ public class Player1Controller : NetworkBehaviour
     public GameObject panelGameOver;
     void Start()
     {
-        barlife = GameObject.Find("LifeBarP1").GetComponent<Image>();
+        //barlife = GameObject.Find("LifeBarP1").GetComponent<Image>();
     }
 
    
     void Update()
     {
         vida = Mathf.Clamp(vida, 0, 100f);
-        barlife.fillAmount = vida / 100f;
+        
         ControlDeVida();
     }
 
@@ -35,12 +35,20 @@ public class Player1Controller : NetworkBehaviour
         }
     }
 
+    [ClientRpc]
+    public void ControlDeBarra(float vida)
+    {
+        barlife.fillAmount = vida / 100f;
+
+    }
+
     [ServerCallback]
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Laser"))
         {
             vida -= 5f;
+            ControlDeBarra(vida);
         }
     }
 }

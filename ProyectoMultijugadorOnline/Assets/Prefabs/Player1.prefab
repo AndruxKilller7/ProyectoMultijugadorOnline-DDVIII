@@ -5003,6 +5003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f10c9191bc9f23645ab7d15bf9e46b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   barlife: {fileID: 0}
   vida: 100
   panelGameOver: {fileID: 0}

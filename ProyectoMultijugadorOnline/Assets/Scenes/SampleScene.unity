@@ -620,6 +620,8 @@ MonoBehaviour:
   - {fileID: 6740429533742126124, guid: dea8b7ade305bea4f94bb0a5a32748dd, type: 3}
   pivotPlayer1: {fileID: 739979298}
   pivotPlayer2: {fileID: 1238745574}
+  barlife1: {fileID: 1117014303}
+  barlife2: {fileID: 1825234740}
 --- !u!4 &728179968
 Transform:
   m_ObjectHideFlags: 0
