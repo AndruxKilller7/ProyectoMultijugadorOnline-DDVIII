@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65534cb9eedf0ae46af76e441ff844c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   barlife: {fileID: 0}
   vida: 100
   panelGameOver: {fileID: 0}
@@ -158,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneId: 0
-  serverOnly: 1
+  serverOnly: 0
   visible: 0
   m_AssetId: 3517e254e31773849a207260224b259b
   hasSpawned: 0

@@ -20,14 +20,16 @@ public class LaserMovement : NetworkBehaviour
     }
 
    
-    [ServerCallback]
+   [ServerCallback]
    private void OnCollisionEnter(Collision other) 
    {
        if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Player2"))
         {
             Debug.Log("PERRO FEO");
-            Instantiate(particles, transform.position, transform.rotation);
+            GameObject par= Instantiate(particles, transform.position, transform.rotation);
+            NetworkServer.Spawn(par);
             Destroy(this.gameObject);
+            NetworkServer.Destroy(gameObject);
         }
     }
 

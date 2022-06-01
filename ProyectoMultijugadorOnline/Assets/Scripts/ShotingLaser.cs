@@ -8,10 +8,7 @@ public class ShotingLaser : NetworkBehaviour
     public GameObject laser;
     public Transform pivotLaser;
 
-    void Start()
-    {
-        
-    }
+   
 
    
     void Update()
@@ -25,6 +22,7 @@ public class ShotingLaser : NetworkBehaviour
     [Command]
     public void Shoot()
     {
-        Instantiate(laser, pivotLaser.position, transform.rotation);
+        GameObject laserF = Instantiate(laser, pivotLaser.position, transform.rotation);
+        NetworkServer.Spawn(laserF);
     }
 }

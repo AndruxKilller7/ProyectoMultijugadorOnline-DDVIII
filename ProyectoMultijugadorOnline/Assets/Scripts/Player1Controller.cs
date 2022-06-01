@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Mirror;
 
 
-public class Player1Controller : MonoBehaviour
+public class Player1Controller : NetworkBehaviour
 {
     public Image barlife;
-    public float vida;
+    [SyncVar] public float vida;
     public GameObject panelGameOver;
     void Start()
     {
@@ -22,6 +23,7 @@ public class Player1Controller : MonoBehaviour
         ControlDeVida();
     }
 
+
     public void ControlDeVida()
     {
         if(vida<=0.0f)
@@ -33,6 +35,7 @@ public class Player1Controller : MonoBehaviour
         }
     }
 
+    [ServerCallback]
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Laser"))

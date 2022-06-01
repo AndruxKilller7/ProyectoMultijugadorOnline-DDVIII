@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Mirror;
 
-public class Player2Controller : MonoBehaviour
+public class Player2Controller : NetworkBehaviour
 {
     public Image barlife;
-    public float vida;
+    [SyncVar] public float vida;
     public GameObject panelGameOver;
 
     void Start()
     {
-
+        barlife = GameObject.Find("LifeBarP2").GetComponent<Image>();
     }
 
 
@@ -33,6 +34,7 @@ public class Player2Controller : MonoBehaviour
         }
     }
 
+    [ServerCallback]
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Laser"))

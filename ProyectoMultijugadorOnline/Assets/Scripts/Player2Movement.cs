@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
 
 
-public class Player2Movement : MonoBehaviour
+public class Player2Movement : NetworkBehaviour
 {
     public float velocidad;
     public float velocidadDeRotacion;
@@ -13,6 +14,9 @@ public class Player2Movement : MonoBehaviour
 
     void Update()
     {
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -9.2f, 9.2f), Mathf.Clamp(transform.position.y, -2f, 3.88f), transform.position.z);
+
         if (Input.GetKey(KeyCode.L))
         {
             transform.Rotate(Vector3.forward * velocidadDeRotacion * Time.deltaTime);

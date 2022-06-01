@@ -4958,6 +4958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f33120355d42b4fb5030ba266ee11b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   laser: {fileID: 2499758586814858533, guid: d41ef86b87de7894d954198cce043bc9, type: 3}
   pivotLaser: {fileID: 6739896646273634200}
 --- !u!65 &6739896645643136565
@@ -5001,8 +5003,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f10c9191bc9f23645ab7d15bf9e46b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
   barlife: {fileID: 0}
   vida: 100
   panelGameOver: {fileID: 0}
