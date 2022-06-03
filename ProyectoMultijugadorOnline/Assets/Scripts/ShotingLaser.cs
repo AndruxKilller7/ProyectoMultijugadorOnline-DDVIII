@@ -7,6 +7,8 @@ public class ShotingLaser : NetworkBehaviour
 {
     public GameObject laser;
     public Transform pivotLaser;
+    public float fireRate;
+    public float nextFire;
 
    
 
@@ -22,7 +24,12 @@ public class ShotingLaser : NetworkBehaviour
     [Command]
     public void Shoot()
     {
-        GameObject laserF = Instantiate(laser, pivotLaser.position, transform.rotation);
-        NetworkServer.Spawn(laserF);
+        if(Time.time>=nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            GameObject laserF = Instantiate(laser, pivotLaser.position, transform.rotation);
+            NetworkServer.Spawn(laserF);
+        }
+      
     }
 }

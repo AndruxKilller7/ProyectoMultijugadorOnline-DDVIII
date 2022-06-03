@@ -19,6 +19,12 @@ public class LaserMovement : NetworkBehaviour
         transform.Translate(Vector3.up * velociadad * Time.deltaTime);
     }
 
+    [Server]
+    public void DestroyLaser()
+    {
+        NetworkServer.Destroy(this.gameObject);
+    }
+
    
    [ServerCallback]
    private void OnCollisionEnter(Collision other) 
@@ -29,7 +35,7 @@ public class LaserMovement : NetworkBehaviour
             GameObject par= Instantiate(particles, transform.position, transform.rotation);
             NetworkServer.Spawn(par);
             Destroy(this.gameObject);
-            NetworkServer.Destroy(gameObject);
+            DestroyLaser();
         }
     }
 
