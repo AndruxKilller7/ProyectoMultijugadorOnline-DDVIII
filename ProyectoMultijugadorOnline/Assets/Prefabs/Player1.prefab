@@ -5097,6 +5097,7 @@ MonoBehaviour:
   barlife: {fileID: 0}
   vida: 100
   anim: {fileID: 174923902}
+  idPlayerShip: 0
 --- !u!114 &6739896645643136566
 MonoBehaviour:
   m_ObjectHideFlags: 0

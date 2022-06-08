@@ -1,0 +1,1488 @@
+fileFormatVersion: 2
+guid: 02fd753e02f7c1d468050b0b2cf03001
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1082898441324514481
+    second: MonedasSprite_5
+  - first:
+      213: -6212228175343995117
+    second: MonedasSprite_6
+  - first:
+      213: -8372087055950257276
+    second: MonedasSprite_7
+  - first:
+      213: 3999039352027380059
+    second: MonedasSprite_8
+  - first:
+      213: 7375642390959901647
+    second: MonedasSprite_9
+  - first:
+      213: -4007759805570294955
+    second: MonedasSprite_10
+  - first:
+      213: 3619288129493636950
+    second: MonedasSprite_11
+  - first:
+      213: -9198889526300572731
+    second: MonedasSprite_12
+  - first:
+      213: 1086553556893971820
+    second: MonedasSprite_13
+  - first:
+      213: 6810810856398351750
+    second: MonedasSprite_14
+  - first:
+      213: -7028709860401372325
+    second: MonedasSprite_15
+  - first:
+      213: 993341745905340264
+    second: MonedasSprite_16
+  - first:
+      213: -4766373652246445766
+    second: MonedasSprite_17
+  - first:
+      213: -4113531609189540101
+    second: MonedasSprite_24
+  - first:
+      213: -489748170727455388
+    second: MonedasSprite_25
+  - first:
+      213: 6536311620317318199
+    second: MonedasSprite_26
+  - first:
+      213: -8996952523851276304
+    second: MonedasSprite_27
+  - first:
+      213: -4694108865837164351
+    second: MonedasSprite_28
+  - first:
+      213: -8184961863440716867
+    second: MonedasSprite_29
+  - first:
+      213: 635750521606917740
+    second: MonedasSprite_35
+  - first:
+      213: -8512550714679920118
+    second: MonedasSprite_36
+  - first:
+      213: 864027376047564124
+    second: MonedasSprite_37
+  - first:
+      213: 2414619618119678815
+    second: MonedasSprite_38
+  - first:
+      213: 8742194764789611164
+    second: MonedasSprite_39
+  - first:
+      213: -8448294802882820461
+    second: MonedasSprite_40
+  - first:
+      213: 8057483694564279097
+    second: MonedasSprite_41
+  - first:
+      213: -1282218732551942144
+    second: MonedasSprite_42
+  - first:
+      213: 5604834536720052209
+    second: MonedasSprite_43
+  - first:
+      213: -5733270770345914399
+    second: MonedasSprite_44
+  - first:
+      213: -5931676595816427512
+    second: MonedasSprite_45
+  - first:
+      213: 2690938838824507192
+    second: MonedasSprite_46
+  - first:
+      213: 8091032148844269577
+    second: MonedasSprite_47
+  - first:
+      213: 7578855155110460677
+    second: MonedasSprite_54
+  - first:
+      213: 5907648957740108454
+    second: MonedasSprite_55
+  - first:
+      213: -8141886318225112955
+    second: MonedasSprite_56
+  - first:
+      213: -3411239394048651287
+    second: MonedasSprite_57
+  - first:
+      213: -4556525370626153692
+    second: MonedasSprite_58
+  - first:
+      213: 6557969096716799430
+    second: MonedasSprite_59
+  - first:
+      213: 2834479845509357046
+    second: MonedasSprite_65
+  - first:
+      213: -5757955311011170117
+    second: MonedasSprite_66
+  - first:
+      213: 4924147702044773698
+    second: MonedasSprite_67
+  - first:
+      213: -7978943264700629699
+    second: MonedasSprite_68
+  - first:
+      213: -9134993526410177387
+    second: MonedasSprite_69
+  - first:
+      213: -7976764967476064380
+    second: MonedasSprite_70
+  - first:
+      213: 5295128633028634615
+    second: MonedasSprite_71
+  - first:
+      213: 6702001485513559280
+    second: MonedasSprite_72
+  - first:
+      213: -2298041650317942871
+    second: MonedasSprite_73
+  - first:
+      213: -1937841053498817319
+    second: MonedasSprite_74
+  - first:
+      213: 8093995669494014141
+    second: MonedasSprite_75
+  - first:
+      213: -1303205243349360669
+    second: MonedasSprite_76
+  - first:
+      213: 7631719788631122622
+    second: MonedasSprite_77
+  - first:
+      213: 2383478330569817941
+    second: MonedasSprite_84
+  - first:
+      213: 4333583853078287584
+    second: MonedasSprite_85
+  - first:
+      213: -6435329254919100461
+    second: MonedasSprite_86
+  - first:
+      213: 2659639667090908749
+    second: MonedasSprite_87
+  - first:
+      213: -3410595821443828453
+    second: MonedasSprite_88
+  - first:
+      213: -8669750511376095871
+    second: MonedasSprite_89
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MonedasSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1040
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f433705ea95c8f0f0800000000000000
+      internalID: -1082898441324514481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1040
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317b2f8636bb9c9a0800000000000000
+      internalID: -6212228175343995117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1040
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48360790e2f50db80800000000000000
+      internalID: -8372087055950257276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_8
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1040
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5976645a117f7730800000000000000
+      internalID: 3999039352027380059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_9
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1040
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb4a7f3dab8b5660800000000000000
+      internalID: 7375642390959901647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_10
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1040
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bd4ebd0b39168c0800000000000000
+      internalID: -4007759805570294955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1040
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6579142c06b4a3230800000000000000
+      internalID: 3619288129493636950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_12
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 919
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c30bc0b6baf65080800000000000000
+      internalID: -9198889526300572731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 919
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c653a1404b6341f00800000000000000
+      internalID: 1086553556893971820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_14
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 919
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d6fff736cd48e50800000000000000
+      internalID: 6810810856398351750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_15
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 919
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53ad752f91057e90800000000000000
+      internalID: -7028709860401372325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_16
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 919
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f01411e0f09cd00800000000000000
+      internalID: 993341745905340264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_17
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 919
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31c117aa607addb0800000000000000
+      internalID: -4766373652246445766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 784
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe9aedbbccc9e6c0800000000000000
+      internalID: -4113531609189540101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_25
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 784
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465846e22a01439f0800000000000000
+      internalID: -489748170727455388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_26
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 784
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c854ea9c4a5ba50800000000000000
+      internalID: 6536311620317318199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_27
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 784
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff5ac2f857642380800000000000000
+      internalID: -8996952523851276304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_28
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 784
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c893c26bdc2bdeb0800000000000000
+      internalID: -4694108865837164351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_29
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 784
+        width: 102
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb2f7d0d8c296e80800000000000000
+      internalID: -8184961863440716867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 649
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e46262bb3a2d800800000000000000
+      internalID: 635750521606917740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_36
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 649
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a7107f9385dd980800000000000000
+      internalID: -8512550714679920118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_37
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 649
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5527891254adfb00800000000000000
+      internalID: 864027376047564124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_38
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 649
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b76bddfb3728120800000000000000
+      internalID: 2414619618119678815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_39
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 649
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a709802d3825970800000000000000
+      internalID: 8742194764789611164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_40
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 649
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396046443a0a1ca80800000000000000
+      internalID: -8448294802882820461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_41
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 649
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9338106dabee1df60800000000000000
+      internalID: 8057483694564279097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_42
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 528
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000d3e13bd4a43ee0800000000000000
+      internalID: -1282218732551942144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_43
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 528
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff2a02c05f58cd40800000000000000
+      internalID: 5604834536720052209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_44
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 528
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efc66c4c945f60b0800000000000000
+      internalID: -5733270770345914399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_45
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 528
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8001ddf30937eada0800000000000000
+      internalID: -5931676595816427512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_46
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 528
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837df60ed92285520800000000000000
+      internalID: 2690938838824507192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_47
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 528
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900d02a0fde194070800000000000000
+      internalID: 8091032148844269577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_54
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 393
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d3f7ceb908d2960800000000000000
+      internalID: 7578855155110460677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_55
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 393
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa4ecf4d6f2cf150800000000000000
+      internalID: 5907648957740108454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_56
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 393
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5804498f785320f80800000000000000
+      internalID: -8141886318225112955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_57
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 393
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef49e938d7d8a0d0800000000000000
+      internalID: -3411239394048651287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_58
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 393
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423e5c12158f3c0c0800000000000000
+      internalID: -4556525370626153692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_59
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 393
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd4bc9d526920b50800000000000000
+      internalID: 6557969096716799430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_65
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 258
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdd69ad668165720800000000000000
+      internalID: 2834479845509357046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_66
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 258
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8fa9ec622a710b0800000000000000
+      internalID: -5757955311011170117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_67
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 258
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d4fe9ee36165440800000000000000
+      internalID: 4924147702044773698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_68
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 258
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3df5800069154190800000000000000
+      internalID: -7978943264700629699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_69
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 258
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59414d879cbf93180800000000000000
+      internalID: -9134993526410177387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_70
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 258
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f0fc85686dc4190800000000000000
+      internalID: -7976764967476064380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_71
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 258
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7ebabdf631c7940800000000000000
+      internalID: 5295128633028634615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_72
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 137
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc0d24a7da420d50800000000000000
+      internalID: 6702001485513559280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_73
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 137
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af1fb96b47bb10e0800000000000000
+      internalID: -2298041650317942871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_74
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 137
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4c80734d76b15e0800000000000000
+      internalID: -1937841053498817319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_75
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 137
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0adb57d26a35070800000000000000
+      internalID: 8093995669494014141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_76
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 137
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef1cb06cb51aede0800000000000000
+      internalID: -1303205243349360669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_77
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 137
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb26da296b059e960800000000000000
+      internalID: 7631719788631122622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_84
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f7477d9e0d31120800000000000000
+      internalID: 2383478330569817941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_85
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2
+        width: 112
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e49917dd8bf32c30800000000000000
+      internalID: 4333583853078287584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_86
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 82
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d72ed3732e11b6a0800000000000000
+      internalID: -6435329254919100461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_87
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2
+        width: 38
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46ed739f20f8e420800000000000000
+      internalID: 2659639667090908749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_88
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2
+        width: 62
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15b866ab212ba0d0800000000000000
+      internalID: -3410595821443828453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonedasSprite_89
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 2
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185aa2e18dbdea780800000000000000
+      internalID: -8669750511376095871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
