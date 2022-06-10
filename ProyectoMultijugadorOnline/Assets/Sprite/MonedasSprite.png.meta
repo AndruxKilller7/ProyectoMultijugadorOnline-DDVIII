@@ -195,6 +195,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1480,6 +1481,64 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      MonedasSprite_57: -3411239394048651287
+      MonedasSprite_12: -9198889526300572731
+      MonedasSprite_26: 6536311620317318199
+      MonedasSprite_13: 1086553556893971820
+      MonedasSprite_8: 3999039352027380059
+      MonedasSprite_7: -8372087055950257276
+      MonedasSprite_66: -5757955311011170117
+      MonedasSprite_70: -7976764967476064380
+      MonedasSprite_44: -5733270770345914399
+      MonedasSprite_41: 8057483694564279097
+      MonedasSprite_10: -4007759805570294955
+      MonedasSprite_15: -7028709860401372325
+      MonedasSprite_39: 8742194764789611164
+      MonedasSprite_55: 5907648957740108454
+      MonedasSprite_68: -7978943264700629699
+      MonedasSprite_84: 2383478330569817941
+      MonedasSprite_37: 864027376047564124
+      MonedasSprite_67: 4924147702044773698
+      MonedasSprite_65: 2834479845509357046
+      MonedasSprite_87: 2659639667090908749
+      MonedasSprite_14: 6810810856398351750
+      MonedasSprite_69: -9134993526410177387
+      MonedasSprite_72: 6702001485513559280
+      MonedasSprite_24: -4113531609189540101
+      MonedasSprite_75: 8093995669494014141
+      MonedasSprite_16: 993341745905340264
+      MonedasSprite_29: -8184961863440716867
+      MonedasSprite_27: -8996952523851276304
+      MonedasSprite_73: -2298041650317942871
+      MonedasSprite_54: 7578855155110460677
+      MonedasSprite_76: -1303205243349360669
+      MonedasSprite_47: 8091032148844269577
+      MonedasSprite_35: 635750521606917740
+      MonedasSprite_85: 4333583853078287584
+      MonedasSprite_46: 2690938838824507192
+      MonedasSprite_38: 2414619618119678815
+      MonedasSprite_36: -8512550714679920118
+      MonedasSprite_74: -1937841053498817319
+      MonedasSprite_25: -489748170727455388
+      MonedasSprite_77: 7631719788631122622
+      MonedasSprite_88: -3410595821443828453
+      MonedasSprite_17: -4766373652246445766
+      MonedasSprite_43: 5604834536720052209
+      MonedasSprite_45: -5931676595816427512
+      MonedasSprite_89: -8669750511376095871
+      MonedasSprite_28: -4694108865837164351
+      MonedasSprite_42: -1282218732551942144
+      MonedasSprite_11: 3619288129493636950
+      MonedasSprite_71: 5295128633028634615
+      MonedasSprite_56: -8141886318225112955
+      MonedasSprite_58: -4556525370626153692
+      MonedasSprite_59: 6557969096716799430
+      MonedasSprite_9: 7375642390959901647
+      MonedasSprite_5: -1082898441324514481
+      MonedasSprite_86: -6435329254919100461
+      MonedasSprite_40: -8448294802882820461
+      MonedasSprite_6: -6212228175343995117
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
