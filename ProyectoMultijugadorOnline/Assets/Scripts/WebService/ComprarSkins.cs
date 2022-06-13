@@ -8,51 +8,47 @@ using System.Text;
 
 public class ComprarSkins : MonoBehaviour
 {
-    public int idPlayer;
-
-    public string nick;
-    public Skins skinsDispobibles;
-    public Text error;
-    public int contadorDePersonajes;
-    public GameObject panel;
-    public GameObject mainMenu;
-    public bool noDisponible = false;
-
+    WebRequest controlDeServicio;
+    Skins skinsDispobibles;
+    public float[] costos;
     void Start()
     {
-        StartCoroutine(GetRequest("http://localhost:8242/api/skins"));
-        nick = GameManager.instance.playerData.nickName;
-        idPlayer = GameManager.instance.playerData.id;
-        //moneyPlayer=GameManager.instance.playerData.money ;
+        
+        controlDeServicio = GameObject.Find("Main Camera").GetComponent<WebRequest>();
+        Debug.Log("MoneyActual"+controlDeServicio.moneyPlayer);
+        StartCoroutine(GetSkinsRequest("http://localhost:8242/api/skins"));
+
+
+
 
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 
     }
 
-    public void ComprarDinero(int valorDeDinero)
-    {
-        //moneyPlayer = valorDeDinero + moneyPlayer;
-        //StartCoroutine(PutPlayer("http://localhost:8242/api/players/" + idPlayer));
-    }
+   
 
     public void ComprarPersonajesButton(int idSkin)
     {
-        //if (skinsDispobibles.skins[idSkin - 1].disponible == true)
-        //{
-        //    StartCoroutine(BuySkin("http://localhost:8242/api/playerSkins", idSkin));
-        //    StartCoroutine(PutSkins("http://localhost:8242/api/skins/" + idSkin.ToString(), idSkin));
+        Debug.Log(skinsDispobibles.skins[idSkin - 1].name);
+        if (controlDeServicio.moneyPlayer >= skinsDispobibles.skins[idSkin-1].value)
+        {
+            StartCoroutine(BuySkin("http://localhost:8242/api/playerSkins", idSkin));
+            //controlDeServicio.moneyPlayer -= skinsDispobibles.skins[idSkin - 1].value;
+           
+        }
+        else
+        {
+            Debug.Log("No tienes monedasSuficientes");
+        }
+
+        //StartCoroutine(PutCoins("http://localhost:8242/api/players/"));
 
 
-        //    contadorDePersonajes += 1;
-        //}
-        //else
-        //{
-        //    Debug.Log("Personaje No Disponible para su compra");
-        //}
+
 
 
     }
@@ -61,8 +57,8 @@ public class ComprarSkins : MonoBehaviour
     {
 
         WWWForm form = new WWWForm();
-        form.AddField("Id", id);
-        form.AddField("PlayerId", GameManager.instance.playerData.id);
+        form.AddField("Id",id );
+        form.AddField("PlayerId", controlDeServicio.idPlayer);
         form.AddField("SkinId", id);
 
         using (UnityWebRequest webrequest = UnityWebRequest.Post(url, form))
@@ -78,48 +74,20 @@ public class ComprarSkins : MonoBehaviour
                     break;
                 case UnityWebRequest.Result.Success:
                     //OnButtonClickRefresh();
-
+                    controlDeServicio.moneyPlayer = controlDeServicio.moneyPlayer- skinsDispobibles.skins[id - 1].value;
+                   
+                    //Debug.Log(controlDeServicio.moneyPlayer);
                     print("success");
+                    //controlDeServicio.ActualizarValores();
+
                     break;
 
             };
         }
     }
 
-    IEnumerator PutSkins(string url, int id)
-    {
-        Debug.Log(id);
 
-        string json = "{\"Id\":" + id.ToString() + ", \"Name\":'" + skinsDispobibles.skins[id - 1].name + "', \"disponible\":'" + noDisponible + "' }";
-        Debug.Log(json);
-        byte[] body = Encoding.UTF8.GetBytes(json);
-
-
-        using (UnityWebRequest webrequest = UnityWebRequest.Put(url, body))
-        {
-            webrequest.uploadHandler = (UploadHandler)new UploadHandlerRaw(body);
-            webrequest.downloadHandler = (DownloadHandler)new DownloadHandlerBuffer();
-            webrequest.SetRequestHeader("Content-Type", "application/json");
-            yield return webrequest.SendWebRequest();
-            switch (webrequest.result)
-            {
-                case UnityWebRequest.Result.ConnectionError:
-                case UnityWebRequest.Result.DataProcessingError:
-                case UnityWebRequest.Result.ProtocolError:
-                    print("error");
-                    break;
-                case UnityWebRequest.Result.Success:
-
-
-
-
-                    break;
-            }
-        }
-    }
-
-
-    IEnumerator GetRequest(string url)
+    IEnumerator GetSkinsRequest(string url)
     {
 
         using (UnityWebRequest webrequest = UnityWebRequest.Get(url))
@@ -133,16 +101,15 @@ public class ComprarSkins : MonoBehaviour
                     print("error");
                     break;
                 case UnityWebRequest.Result.Success:
-                    print(webrequest.downloadHandler.text);
+
                     skinsDispobibles = JsonUtility.FromJson<Skins>("{\"skins\":" + webrequest.downloadHandler.text + "}");
-                    for (int i = 0; i < skinsDispobibles.skins.Length; i++)
+                    for(int i=0;i<skinsDispobibles.skins.Length;i++)
                     {
-                        //Debug.Log(skinsDispobibles.skins[i].disponible);
+                        Debug.Log(skinsDispobibles.skins[i].value);
                     }
+                    
 
-
-
-
+              
 
 
                     break;
@@ -150,25 +117,17 @@ public class ComprarSkins : MonoBehaviour
         }
     }
 
+  
 
-    public void VerificarPersonajes()
-    {
-        if (contadorDePersonajes >= 3)
-        {
-            SceneManager.LoadScene(2);
-        }
-        else
-        {
-            Debug.Log("No tiene skins Suficientes");
-        }
 
-    }
 
-    public void ActiveList()
-    {
-        panel.SetActive(true);
-        mainMenu.SetActive(false);
-    }
+
+
+
+
+
+
+
 
 
 }

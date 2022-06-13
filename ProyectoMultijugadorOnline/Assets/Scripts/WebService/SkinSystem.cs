@@ -59,6 +59,8 @@ public class SkinSystem : MonoBehaviour
                         contenedorDeSkins[i] = contenedor;
                         contenedorDeSkins[i].GetComponent<SkinContainer>().nameSkin.text = skinsDispobibles.skins[i].name;
                         contenedorDeSkins[i].GetComponent<SkinContainer>().value.text = skinsDispobibles.skins[i].value.ToString();
+                        contenedorDeSkins[i].GetComponent<SkinContainer>().imageSkin.sprite = Resources.Load<Sprite>("Skin" + skinsDispobibles.skins[i].id);
+                        contenedorDeSkins[i].GetComponent<SkinContainer>().botonDeCompra.GetComponent<Botones>().id = skinsDispobibles.skins[i].id;
                         //Debug.Log(i);
                         //contenedorDeSkins[i].GetComponent<Botones>().id = skinsDispobibles.skins[i].id;
 

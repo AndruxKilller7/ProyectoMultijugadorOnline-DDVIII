@@ -55,6 +55,11 @@ namespace MyCrudGame.Controllers
                 return BadRequest();
             }
 
+            //if (id != player.Id)
+            //{
+            //    return BadRequest();
+            //}
+
             _context.Entry(player).State = EntityState.Modified;
 
             try

@@ -60,14 +60,20 @@
     <Compile Include="Assets\Scripts\ShotingLaser2.cs" />
     <Compile Include="Assets\Scripts\LaserMovement.cs" />
     <Compile Include="Assets\Scripts\BarraDeVida.cs" />
+    <Compile Include="Assets\Scripts\WebService\SkinContainer.cs" />
     <Compile Include="Assets\Scripts\WebService\GameManager.cs" />
+    <Compile Include="Assets\Scripts\WebService\ComprarSkins.cs" />
     <Compile Include="Assets\Scripts\Player1Controller.cs" />
+    <Compile Include="Assets\Scripts\WebService\Skin.cs" />
     <Compile Include="Assets\Scripts\ParralaxEffect.cs" />
     <Compile Include="Assets\Scripts\Player2Controller.cs" />
     <Compile Include="Assets\Scripts\NetworkManagerGame.cs" />
     <Compile Include="Assets\Scripts\WebService\Player.cs" />
+    <Compile Include="Assets\Scripts\WebService\LoginScript.cs" />
     <Compile Include="Assets\Scripts\UI_Scripts\DesplegarPanel.cs" />
     <Compile Include="Assets\Scripts\DestroyEffects.cs" />
+    <Compile Include="Assets\Scripts\WebService\Botones.cs" />
+    <Compile Include="Assets\Scripts\WebService\Skins.cs" />
     <Compile Include="Assets\Scripts\ModelDestroyShip.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\WebService\WebRequest.cs" />
@@ -75,11 +81,6 @@
     <Compile Include="Assets\Scripts\Player1Movement.cs" />
     <Compile Include="Assets\Scripts\Player2Movement.cs" />
     <Compile Include="Assets\Scripts\WebService\SkinSystem.cs" />
-    <Compile Include="Assets\Scripts\WebService\Skin.cs" />
-    <Compile Include="Assets\Scripts\WebService\Skins.cs" />
-    <Compile Include="Assets\Scripts\WebService\ComprarSkins.cs" />
-    <Compile Include="Assets\Scripts\WebService\Botones.cs" />
-    <Compile Include="Assets\Scripts\WebService\SkinContainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />

@@ -10,12 +10,17 @@ public class WebRequest : MonoBehaviour
 {
     public int moneyPlayer;
     public int idPlayer;
+    public Text coinsUpdate;
     void Start()
     {
-        
+        idPlayer = GameManager.instance.playerData.id;
+        coinsUpdate.text = GameManager.instance.playerData.money.ToString();
+        moneyPlayer = GameManager.instance.playerData.money;
+        Debug.Log("ID_PLAYER:" + idPlayer);
+       
     }
 
- 
+
     void Update()
     {
         
@@ -23,17 +28,33 @@ public class WebRequest : MonoBehaviour
 
     public void ComprarDinero(int valorDeDinero)
     {
+        valorDeDinero = valorDeDinero + moneyPlayer;
         moneyPlayer = valorDeDinero;
-        StartCoroutine(PutPlayer("http://localhost:8242/api/players/"+idPlayer));
+        Debug.Log("Money:" + moneyPlayer);
+       
+        StartCoroutine(PutPlayer("http://localhost:8242/api/players/" + idPlayer));
+       
+        //coinsUpdate.text = GameManager.instance.playerData.money.ToString();
+        //ActualizarValores();
+
+    }
+
+    public void ActualizarValores()
+    {
+        StartCoroutine(GetRequestPlayer("http://localhost:8242/api/players/" + idPlayer));
+        
+
     }
 
 
     IEnumerator PutPlayer(string url)
     {
-        //PlayerSkins players = JsonUtility.FromJson<PlayerSkins>("{\"playerSkins\":" + webrequest.downloadHandler.text + "}");
+
         string money = moneyPlayer.ToString();
-        string name = "Jry";
-        string json = "{\"Id\":" + idPlayer.ToString() + ", \"NickName\":'" + name + "', \"Money\":'" + money + "' }";
+        //string nick = "sad";
+        string name = "bger";
+        //string json = "{\"Id\":" + idPlayer.ToString() + ", \"money\":'" + moneyPlayer.ToString() + "' }";
+        string json = "{\"Id\":" + idPlayer + ", \"NickName\":'" + name + "', \"Money\":'" + money + "' }";
         Debug.Log(json);
         byte[] body = Encoding.UTF8.GetBytes(json);
 
@@ -54,8 +75,34 @@ public class WebRequest : MonoBehaviour
                 case UnityWebRequest.Result.Success:
 
                     Debug.Log("CompraRealizada");
+                    
+
+                    break;
+            }
+        }
+    }
+
+    IEnumerator GetRequestPlayer(string url)
+    {
+
+        using (UnityWebRequest webrequest = UnityWebRequest.Get(url))
+        {
+            yield return webrequest.SendWebRequest();
+            switch (webrequest.result)
+            {
+                case UnityWebRequest.Result.ConnectionError:
+                case UnityWebRequest.Result.DataProcessingError:
+                case UnityWebRequest.Result.ProtocolError:
+                    print("error");
+                    break;
+                case UnityWebRequest.Result.Success:
+                    print(webrequest.downloadHandler.text);
 
 
+                    Player player = JsonUtility.FromJson<Player>(webrequest.downloadHandler.text);
+                    GameManager.instance.playerData = player;
+                    Debug.Log("Actualizado" + GameManager.instance.playerData.money);
+                
                     break;
             }
         }

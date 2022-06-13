@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Text;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,4 +29,6 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+
+    
 }

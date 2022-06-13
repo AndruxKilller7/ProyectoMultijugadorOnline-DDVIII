@@ -6,7 +6,7 @@ public class Botones : MonoBehaviour
 {
     ComprarSkins controller;
     public int id;
-    public Text nombreSkin;
+   
     void Start()
     {
         controller = GameObject.Find("Main Camera").GetComponent<ComprarSkins>();
