@@ -75,7 +75,8 @@ public class ComprarSkins : MonoBehaviour
                 case UnityWebRequest.Result.Success:
                     //OnButtonClickRefresh();
                     controlDeServicio.moneyPlayer = controlDeServicio.moneyPlayer- skinsDispobibles.skins[id - 1].value;
-                   
+                    controlDeServicio.ComprarSkin();
+                  
                     //Debug.Log(controlDeServicio.moneyPlayer);
                     print("success");
                     //controlDeServicio.ActualizarValores();

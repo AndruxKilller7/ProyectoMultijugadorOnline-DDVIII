@@ -13,9 +13,7 @@ public class WebRequest : MonoBehaviour
     public Text coinsUpdate;
     void Start()
     {
-        idPlayer = GameManager.instance.playerData.id;
-        coinsUpdate.text = GameManager.instance.playerData.money.ToString();
-        moneyPlayer = GameManager.instance.playerData.money;
+       
         Debug.Log("ID_PLAYER:" + idPlayer);
        
     }
@@ -23,7 +21,9 @@ public class WebRequest : MonoBehaviour
 
     void Update()
     {
-        
+        idPlayer = GameManager.instance.playerData.id;
+        coinsUpdate.text = GameManager.instance.playerData.money.ToString();
+        moneyPlayer = GameManager.instance.playerData.money;
     }
 
     public void ComprarDinero(int valorDeDinero)
@@ -35,8 +35,13 @@ public class WebRequest : MonoBehaviour
         StartCoroutine(PutPlayer("http://localhost:8242/api/players/" + idPlayer));
        
         //coinsUpdate.text = GameManager.instance.playerData.money.ToString();
-        //ActualizarValores();
+        
 
+    }
+
+    public void ComprarSkin()
+    {
+        StartCoroutine(PutPlayer("http://localhost:8242/api/players/" + idPlayer));
     }
 
     public void ActualizarValores()
@@ -75,7 +80,7 @@ public class WebRequest : MonoBehaviour
                 case UnityWebRequest.Result.Success:
 
                     Debug.Log("CompraRealizada");
-                    
+                    ActualizarValores();
 
                     break;
             }
@@ -101,7 +106,7 @@ public class WebRequest : MonoBehaviour
 
                     Player player = JsonUtility.FromJson<Player>(webrequest.downloadHandler.text);
                     GameManager.instance.playerData = player;
-                    Debug.Log("Actualizado" + GameManager.instance.playerData.money);
+                    //Debug.Log("Actualizado" + GameManager.instance.playerData.money);
                 
                     break;
             }

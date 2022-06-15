@@ -48,17 +48,17 @@ namespace MyCrudGame.Controllers
         [HttpPut("{id}")]
         public async Task<ActionResult<Player>> PutPlayer(int id, Player player)
         {
-            var PlayerExist = await Task.Run(() => _context.Players.SingleOrDefault(x => x.NickName == player.NickName));
+            //var PlayerExist = await Task.Run(() => _context.Players.SingleOrDefault(x => x.NickName == player.NickName));
 
-            if (id != player.Id && PlayerExist != null)
-            {
-                return BadRequest();
-            }
-
-            //if (id != player.Id)
+            //if (id != player.Id && PlayerExist != null)
             //{
             //    return BadRequest();
             //}
+
+            if (id != player.Id)
+            {
+                return BadRequest();
+            }
 
             _context.Entry(player).State = EntityState.Modified;
 
