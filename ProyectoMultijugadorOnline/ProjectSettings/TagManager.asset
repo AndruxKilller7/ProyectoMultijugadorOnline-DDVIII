@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Player2
   - Laser
+  - Rocket
+  - ItemS
+  - ItemR
   layers:
   - Default
   - TransparentFX

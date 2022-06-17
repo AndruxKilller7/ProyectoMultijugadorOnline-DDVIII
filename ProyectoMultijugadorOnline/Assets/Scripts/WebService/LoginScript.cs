@@ -52,7 +52,7 @@ public class LoginScript : MonoBehaviour
                         //print(webrequest.downloadHandler.text);
                         Player player = JsonUtility.FromJson<Player>(webrequest.downloadHandler.text);
                         GameManager.instance.playerData = player;
-                        SceneManager.LoadScene(1);
+                        SceneManager.LoadScene(2);
                     }
                     break;
 

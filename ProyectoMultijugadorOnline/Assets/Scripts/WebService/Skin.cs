@@ -8,6 +8,8 @@ public class Skin
 
     public int id;
     public string name;
+    public string code;
     public int value;
+    public bool disponible;
     
 }

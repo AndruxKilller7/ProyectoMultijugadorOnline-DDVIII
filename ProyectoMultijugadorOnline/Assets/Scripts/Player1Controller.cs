@@ -12,11 +12,34 @@ public class Player1Controller : NetworkBehaviour
     [SyncVar] public float vida=100.0f;
     public Animator anim;
     public int idPlayerShip;
+    public GameObject modelShip;
+    public Mesh[] skins;
+    [SyncVar] public int seleccionado;
+    
     void Start()
     {
        
+       
 
-        
+        if (idPlayerShip == 0)
+        {
+            SkinSelect(seleccionado);
+            //modelShip.GetComponent<Renderer>().materials[4].color = Color.red;
+
+
+            DeterminarColor1();
+        }
+
+        if (idPlayerShip == 1)
+        {
+
+            //modelShip.GetComponent<Renderer>().materials[4].color = Color.blue;
+            DeterminarColor2();
+
+
+        }
+
+
     }
 
 
@@ -25,7 +48,7 @@ public class Player1Controller : NetworkBehaviour
         vida = Mathf.Clamp(vida, 0, 100.0f);
        
         ControlDeVida();
-    
+
        
      }
 
@@ -34,11 +57,30 @@ public class Player1Controller : NetworkBehaviour
     {
         if (vida <= 0.0f)
         {
-            Destroy(this.gameObject);
-            Time.timeScale = 0;
-            GameOver();
+            if(idPlayerShip==0)
+            {
+                Destroy(this.gameObject);
+                GameManager.instance.playerEliminado = 1;
+                GameOver();
+            }
 
+            if (idPlayerShip == 1)
+            {
+                Destroy(this.gameObject);
+                GameManager.instance.playerEliminado = 2;
+                GameOver();
+            }
 
+        }
+
+        if (idPlayerShip == 0 && GameManager.instance.playerEliminado == 2)
+        {
+            Win();
+        }
+
+        if (idPlayerShip == 1 && GameManager.instance.playerEliminado == 1)
+        {
+            Win();
         }
     }
 
@@ -59,6 +101,13 @@ public class Player1Controller : NetworkBehaviour
 
     }
 
+    [TargetRpc]
+    public void Win()
+    {
+        SceneManager.LoadScene(3);
+
+    }
+
     [ClientRpc]
     public void ControlDeBarra()
     {
@@ -69,16 +118,50 @@ public class Player1Controller : NetworkBehaviour
 
     }
 
+    [ClientRpc]
+    public void DeterminarColor1()
+    {
+        modelShip.GetComponent<Renderer>().materials[4].color = Color.red;
+        
 
+    }
 
+    [ClientRpc]
+    public void DeterminarColor2()
+    {
+        modelShip.GetComponent<Renderer>().materials[4].color = Color.blue;
+       
+
+    }
+   
+    
+  
+   [ClientRpc]
+    public void SkinSelect(int id)
+    {
+
+        Debug.Log(seleccionado);
+        modelShip.GetComponent<MeshFilter>().mesh = skins[id];
+    }
+   
     [ServerCallback]
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Laser"))
+        if (collision.gameObject.CompareTag("Laser")|| collision.gameObject.CompareTag("Rocket"))
         {
             vida -= 5f;
             ControlDeBarra();
             PruebaControlDeBarra(vida,idPlayerShip);
         }
+
+        if (collision.gameObject.CompareTag("ItemS"))
+        {
+            vida += 3f;
+            PruebaControlDeBarra(vida, idPlayerShip);
+
+        }
+
     }
+
+    
 }

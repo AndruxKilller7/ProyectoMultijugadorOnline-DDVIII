@@ -67,20 +67,27 @@
     <Compile Include="Assets\Scripts\WebService\Skin.cs" />
     <Compile Include="Assets\Scripts\ParralaxEffect.cs" />
     <Compile Include="Assets\Scripts\Player2Controller.cs" />
+    <Compile Include="Assets\RashoLaser.cs" />
     <Compile Include="Assets\Scripts\NetworkManagerGame.cs" />
     <Compile Include="Assets\Scripts\WebService\Player.cs" />
+    <Compile Include="Assets\Scripts\RocketMovement.cs" />
     <Compile Include="Assets\Scripts\WebService\LoginScript.cs" />
     <Compile Include="Assets\Scripts\UI_Scripts\DesplegarPanel.cs" />
+    <Compile Include="Assets\Scripts\SpawnItems.cs" />
+    <Compile Include="Assets\DestroyParticulas.cs" />
     <Compile Include="Assets\Scripts\DestroyEffects.cs" />
+    <Compile Include="Assets\Scripts\StartGameScript.cs" />
     <Compile Include="Assets\Scripts\WebService\Botones.cs" />
     <Compile Include="Assets\Scripts\WebService\Skins.cs" />
     <Compile Include="Assets\Scripts\ModelDestroyShip.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
+    <Compile Include="Assets\Scripts\UI_Scripts\BotonParaEquiparSkin.cs" />
     <Compile Include="Assets\Scripts\WebService\WebRequest.cs" />
     <Compile Include="Assets\Scripts\ShotingLaser.cs" />
     <Compile Include="Assets\Scripts\Player1Movement.cs" />
     <Compile Include="Assets\Scripts\Player2Movement.cs" />
     <Compile Include="Assets\Scripts\WebService\SkinSystem.cs" />
+    <Compile Include="Assets\Scripts\ItemScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />

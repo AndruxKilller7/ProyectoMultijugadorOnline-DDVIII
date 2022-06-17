@@ -8,9 +8,10 @@ public class SkinContainer : MonoBehaviour
     public Image imageSkin;
     public Text nameSkin;
     public Button botonDeCompra;
-    public Button botonDelete;
+    public Button botonEquip;
     public Text value;
     public Image skinImage;
+    public Image vendidoImage;
     void Start()
     {
         

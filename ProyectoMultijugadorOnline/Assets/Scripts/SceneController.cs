@@ -27,6 +27,11 @@ public class SceneController : MonoBehaviour
 
     public void Salir()
     {
+        Application.Quit();
+    }
+
+    public void StartGame()
+    {
         SceneManager.LoadScene(0);
     }
 

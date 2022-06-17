@@ -10,8 +10,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public Player playerData;
-    //public Skin[] availableSkins;
-    // Start is called before the first frame update
+    public Skin[] skinsDisponibles;
+    public bool[] equipado;
+    public int idSkinEquip;
+    public int playerEliminado;
     void Awake()
     {
         MakeSingleton();

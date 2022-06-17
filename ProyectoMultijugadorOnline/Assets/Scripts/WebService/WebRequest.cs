@@ -57,7 +57,7 @@ public class WebRequest : MonoBehaviour
 
         string money = moneyPlayer.ToString();
         //string nick = "sad";
-        string name = "bger";
+        string name = GameManager.instance.playerData.nickName;
         //string json = "{\"Id\":" + idPlayer.ToString() + ", \"money\":'" + moneyPlayer.ToString() + "' }";
         string json = "{\"Id\":" + idPlayer + ", \"NickName\":'" + name + "', \"Money\":'" + money + "' }";
         Debug.Log(json);

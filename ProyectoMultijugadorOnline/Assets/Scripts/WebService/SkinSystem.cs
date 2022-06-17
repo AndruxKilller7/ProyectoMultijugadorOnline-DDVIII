@@ -13,6 +13,7 @@ public class SkinSystem : MonoBehaviour
     GameObject[] contenedorDeSkins;
     public GameObject contenedor;
     public GameObject padre;
+
     //ComprarSkins controller;
     //public Text[] tectoPersonaje;
     //public GameObject[] pruebas;
@@ -53,6 +54,7 @@ public class SkinSystem : MonoBehaviour
                     //tectoPersonaje = new Text[skinsDispobibles.skins.Length];
                     Debug.Log(skinsDispobibles.skins.Length);
                     Debug.Log(contenedorDeSkins.Length);
+                   
                     //pruebas = new GameObject[contenedorDeSkins.Length];
                     for (int i = 0; i < skinsDispobibles.skins.Length; i++)
                     {
@@ -61,12 +63,18 @@ public class SkinSystem : MonoBehaviour
                         contenedorDeSkins[i].GetComponent<SkinContainer>().value.text = skinsDispobibles.skins[i].value.ToString();
                         contenedorDeSkins[i].GetComponent<SkinContainer>().imageSkin.sprite = Resources.Load<Sprite>("Skin" + skinsDispobibles.skins[i].id);
                         contenedorDeSkins[i].GetComponent<SkinContainer>().botonDeCompra.GetComponent<Botones>().id = skinsDispobibles.skins[i].id;
+                        contenedorDeSkins[i].GetComponent<SkinContainer>().botonEquip.GetComponent<BotonParaEquiparSkin>().id = skinsDispobibles.skins[i].id;
+                        
                         //Debug.Log(i);
                         //contenedorDeSkins[i].GetComponent<Botones>().id = skinsDispobibles.skins[i].id;
 
                         Instantiate(contenedorDeSkins[i], padre.transform.position, transform.rotation, padre.transform);
+                        
 
                     }
+                    
+                   
+                    
 
 
                     break;

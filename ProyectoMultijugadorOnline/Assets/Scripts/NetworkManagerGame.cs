@@ -8,22 +8,34 @@ public class NetworkManagerGame : NetworkManager
 {
     public Transform pivotPlayer1;
     public Transform pivotPlayer2;
-    //public Image barlife1;
-    //public Image barlife2;
+    public GameObject startSystem;
+   
+  
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
-
-        //Image barlifes = numPlayers == 0 ? barlife1 : barlife2;
+       
         Transform start = numPlayers == 0 ? pivotPlayer1 : pivotPlayer2;
         GameObject player = Instantiate(playerPrefab, start.position, start.rotation);
         player.GetComponent<Player1Controller>().idPlayerShip = numPlayers;
-        NetworkServer.AddPlayerForConnection(conn, player);
+        player.GetComponent<Player1Controller>().seleccionado = GameManager.instance.idSkinEquip;
+        //player.GetComponent<Player1Movement>().enabled = false;
+        //player.GetComponent<ShotingLaser>().enabled = false;
        
-        print("sdasd");
-        //base.OnServerAddPlayer(conn);
+       
+        NetworkServer.AddPlayerForConnection(conn, player);
 
+        print("sdasd");
+       
+
+
+        if (numPlayers==2)
+        {
+            startSystem.GetComponent<StartGameScript>().empezar = true;
+            
+        }
 
     }
+
 
 
    
